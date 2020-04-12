@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 300px;
+}
+
+header {
+    font-size: 3em;
+    text-align: center;
+}
+
+.title {
+    /*Border*/
+    border: 1px black;
+    border-style: none none solid solid;
+    border-width: thick;
+    /*position*/
+    position: absolute;
+    right: 0;
+    /*other*/
+    font-size: 3em;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.title-pink {
+    background-color: pink;
+}
+
+.title-red {
+    background-color: red;
+    color: white;
+}
+
+.title-yellow {
+    background-color: yellow;
+}
+
+.content {
+    /*position*/
+    position: relative;
+    top: 4em;
+    /*padding*/
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.col {
+    /*border*/
+    border: 1px black solid;
+    border-width: thick;
+    /*position*/
+    background-color: gainsboro;
+    position: relative;
+    float: left;
+}
+
+@media (max-width:767px) {
+    .col-sm-12 {
+        width: 100%;
+        margin: 1% 0px;
+        min-height: 17em;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6 {
+        width: 48%;
+        margin: 2% 1%;
+        min-height: 15em;
+    }
+    .col-md-12 {
+        width: 100%;
+        min-height: 11em;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-4 {
+        width: 32%;
+        margin: 2% 0.5%;
+        min-height: 17em;
+    }
+}
